@@ -25,6 +25,44 @@ h1 {
 
 p{
 
-    padding: 10px;
+    padding: 0;
+
+}
+
+main{
+
+    max-width: 900px;
+
+}
+
+aside{
+
+    width: 25rem;
+    margin: 2rem;
+    border: 1px solid #222;
+    padding: 1rem;
+    color: #222;
+    text-align: justify;
+
+}
+
+aside img{
+
+    width: 200px;
+
+}
+
+main img {
+
+    width: 150px;
+    height: auto;
+
+}
+
+footer{
+
+    margin-top: 30px;
+    border-top: 2px solid #222;
+    text-align: center;
 
 }
