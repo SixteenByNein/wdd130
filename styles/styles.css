@@ -8,8 +8,13 @@
 
 nav {
 
-    background-color: steelblue;
+    background-color: #224;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
 
 }
 
@@ -18,16 +23,21 @@ nav a {
     color:white;
     display: block;
     padding: 20px;
+    padding: 4px;
+    text-decoration: none;
+
+}
+
+nav a.hover {
+
+    font-weight: bold;
 
 }
 
 h1 {
 
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border-bottom: solid 2px;
+    color: #224;
 
 }
 
@@ -37,11 +47,6 @@ p{
 
 }
 
-main{
-
-    max-width: 900px;
-
-}
 
 aside{
 
@@ -53,7 +58,8 @@ aside{
 
 aside img{
 
-    width: 200px;
+    width: 80%;
+    margin: auto;
 
 }
 
@@ -76,8 +82,11 @@ footer{
 aside h2{
 
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 50%;
+    text-align: left;
+    color: #FFF;
+    font-size: medium;
+    text-shadow: #000 2px;
 
 }
 
@@ -90,5 +99,26 @@ aside h2{
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+
+}
+
+.grid{
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+main{
+
+    order: 1;
+
+}
+
+header, .grid, footer{
+
+    max-width: 840px;
+    margin: 0 auto;
 
 }
