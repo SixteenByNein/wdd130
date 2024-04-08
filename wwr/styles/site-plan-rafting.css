@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&display=swap');
+
+:root{
+
+    --primary-color: #222;
+    --secondary-color: #334;
+    --accent1-color: #065;
+    --accent2-color: #ea2;
+
+    --heading-font: "Lexend", sans-serif;
+    --paragraph-font: "EB Garamond", serif;
+
+    --navigation-background-color: #ddf;
+    --navigation-link-color: #225;
+
+    --navigation-hover-link-color: #525;
+    --navigation-hover-background-color: #99b;
+
+}
+
+body{
+
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+
+}
+
+header{
+
+    padding: 25px;
+    background-color: var(--accent1-color);
+
+}
+
+p{
+
+    padding: 25px;
+
+}
+
+nav{
+
+    background-color: var(--navigation-background-color);
+    font-size: 1.2rem;
+    display: flex;
+
+}
+
+nav a {
+
+    display: block;
+    color: var(--navigation-link-color);
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+nav a:link, nav a:visited {
+
+    color: var(--navigation-hover-link-color)
+
+}
+
+nav a:hover{
+
+    color: var(--navigation-hover-link-color);
+    background-color: var(--navigation-hover-background-color);
+
+}
