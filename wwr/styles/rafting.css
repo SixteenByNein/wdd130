@@ -67,7 +67,7 @@ main{
     margin: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
+    overflow: hidden;
 
 }
 
@@ -97,12 +97,30 @@ a{
 
 }
 
+.hero{
+
+    height: 200px;
+    display: grid;
+
+}
+
 .hero img{
 
     display: block;
     width: 100%;
     height: 200px;
     object-fit: cover;
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+}
+
+.hero h1{
+
+grid-column-start: 1;
+grid-row-start: 1;
+height: fit-content;
+margin: auto;
 
 }
 
@@ -124,6 +142,14 @@ article img{
 
 }
 
+
+button{
+
+    width: 100%;
+    background-color: rgb(255, 67, 67);
+
+}
+
 .history{
 
     display: grid;
@@ -138,7 +164,6 @@ article img{
 h1{
 
     color: var(--accent2-color);
-    margin-top: -35%;
     width: 75rem;
     background-color: rgba(2, 15, 40, .7);
 
@@ -192,6 +217,60 @@ form{
 
     width: fit-content;
     margin: auto;
+
+}
+
+.gallery{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+
+}
+
+.wide{
+
+    grid-column: span 2;
+
+}
+
+.gallery img{
+
+    padding: 0%;
+    width: 100%;
+    margin: auto;
+    opacity: 0.9;
+    border-radius: 20px;
+    transition-property: border-radius opacity;
+    transition-duration: .3s;
+
+}
+
+.gallery img:hover {
+
+    border-radius: 0%;
+    opacity: 1;
+
+}
+
+.trip-descriptions{
+
+    display: grid;
+    grid-template-columns: 1fr 400px;
+
+}
+
+.trip-descriptions img{
+
+    width: 100%;
+
+}
+
+td{
+
+    border: solid #000 1px;
+    margin: 0;
+    text-align: center;
 
 }
 
